@@ -1,0 +1,26 @@
+/* CSS RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* 
+  Le dimensioni degli elementi 
+  saranno composte esclusivamente da
+  CONTENUTO + PADDING + BORDO 
+  */
+}
+
+.box {
+  /* Larghezza */
+  width: 100px;
+  /* Altezza */
+  height: 100px;
+  /* Bordo */
+  border: 2px solid black;
+  /* Sfondo */
+  background-color: red;
+  /* Margine */
+  margin: 20px;
+  /* Padding */
+  padding: 10px;
+}
