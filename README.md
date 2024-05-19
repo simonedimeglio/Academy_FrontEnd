@@ -1,4 +1,4 @@
-# Repository Academy Opinno 2024 - FrontEnd
+# Repository Academy Opinno 2024 - FrontEnd.
 
 Docente: Simone Di Meglio
 <br>
