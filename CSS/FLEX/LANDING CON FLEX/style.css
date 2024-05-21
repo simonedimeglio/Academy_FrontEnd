@@ -84,3 +84,93 @@ nav .menu ul li {
   background-color: blue;
   color: yellow;
 }
+
+/*  */
+
+/* 04 - MAIN */
+main section {
+  display: flex;
+  padding: 40px 0px;
+}
+
+main section .txt-container,
+main section .img-container {
+  width: 50%;
+  padding: 30px;
+}
+
+main section .txt-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+main section .txt-container h2 {
+  font-size: 17px;
+  margin-bottom: 12px;
+}
+
+main section .txt-container p {
+  font-size: 12px;
+}
+
+main section .img-container img {
+  width: 100%;
+  height: 100%;
+  max-width: 800px;
+}
+
+main .second {
+  flex-direction: row-reverse;
+  background-color: aliceblue;
+}
+
+main .fourth {
+  flex-direction: column;
+  background-color: aliceblue;
+}
+
+main .fourth .txt-container,
+main .fourth .img-container {
+  width: 100%;
+}
+
+#contatti {
+  background-color: #000;
+  color: #fff;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+#contatti h2 {
+  margin-bottom: 20px;
+}
+
+#contatti form div {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+#contatti form div label {
+  margin-bottom: 10px;
+}
+
+#contatti form div input,
+#contatti form div textarea,
+#contatti form button {
+  border-radius: 4px;
+  border: none;
+  padding: 10px;
+}
+
+#contatti form button {
+  color: #fff;
+  background-color: teal;
+  width: 100%;
+  cursor: pointer;
+}

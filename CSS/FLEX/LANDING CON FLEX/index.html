@@ -4,8 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="normalize.css" />
-    <title>Document</title>
+    <title>Prima Landing</title>
   </head>
   <body>
     <!-- HEADER + NAV -->
@@ -20,13 +19,13 @@
         <div class="menu">
           <ul>
             <li>
-              <a>Home</a>
+              <a href="index.html">Home</a>
             </li>
             <li>
-              <a>Sconti</a>
+              <a href="#sconti">Sconti</a>
             </li>
             <li>
-              <a>Contattaci</a>
+              <a href="#contatti">Contattaci</a>
             </li>
           </ul>
         </div>
@@ -42,5 +41,114 @@
         <div class="cta">Contattaci ora!</div>
       </div>
     </section>
+
+    <!-- MAIN -->
+    <main>
+      <!-- PRIMA SEZIONE -->
+      <section class="first">
+        <!-- Blocco titolo + testo -->
+        <div class="txt-container">
+          <h2>Titolo della sezione</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo earum
+            quia quasi sequi error odit eaque laboriosam, consequatur id
+            explicabo cum quo incidunt veritatis rem suscipit obcaecati
+            molestiae, inventore itaque.
+          </p>
+        </div>
+        <!-- Blocco immagine -->
+        <div class="img-container">
+          <img src="assets/hero-bg.jpg" alt="Foto" />
+        </div>
+      </section>
+
+      <!-- SECONDA SEZIONE -->
+      <section class="second">
+        <!-- Blocco titolo + testo -->
+        <div class="txt-container">
+          <h2>Titolo della sezione</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo earum
+            quia quasi sequi error odit eaque laboriosam, consequatur id
+            explicabo cum quo incidunt veritatis rem suscipit obcaecati
+            molestiae, inventore itaque.
+          </p>
+        </div>
+        <!-- Blocco immagine -->
+        <div class="img-container">
+          <img src="assets/hero-bg.jpg" alt="Foto" />
+        </div>
+      </section>
+
+      <!-- TERZA SEZIONE -->
+      <section class="third">
+        <!-- Blocco titolo + testo -->
+        <div class="txt-container">
+          <h2>Titolo della sezione</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo earum
+            quia quasi sequi error odit eaque laboriosam, consequatur id
+            explicabo cum quo incidunt veritatis rem suscipit obcaecati
+            molestiae, inventore itaque.
+          </p>
+        </div>
+        <!-- Blocco immagine -->
+        <div class="img-container">
+          <img src="assets/hero-bg.jpg" alt="Foto" />
+        </div>
+      </section>
+
+      <!-- QUARTA SEZIONE - sezione sconti -->
+      <section class="fourth" id="sconti">
+        <!-- Blocco titolo + testo -->
+        <div class="txt-container">
+          <h2>Titolo della sezione</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo earum
+            quia quasi sequi error odit eaque laboriosam, consequatur id
+            explicabo cum quo incidunt veritatis rem suscipit obcaecati
+            molestiae, inventore itaque.
+          </p>
+        </div>
+        <!-- Blocco immagine -->
+        <div class="img-container">
+          <img src="assets/hero-bg.jpg" alt="Foto" />
+        </div>
+      </section>
+
+      <!-- QUINTA SEZIONE - sezione contatti -->
+      <section id="contatti">
+        <h2>Inviaci un messaggio</h2>
+        <form>
+          <div>
+            <label for="nome">Nome:</label>
+            <input type="text" placeholder="Inserisci il tuo nome" required />
+          </div>
+          <div>
+            <label for="cognome">Cognome:</label>
+            <input
+              type="text"
+              placeholder="Inserisci il tuo cognome"
+              required
+            />
+          </div>
+          <div>
+            <label for="email">Email:</label>
+            <input type="email" placeholder="Inserisci la tua mail" required />
+          </div>
+          <div>
+            <label for="message">Messaggio:</label>
+            <textarea
+              name="message"
+              rows="4"
+              cols="50"
+              placeholder="Scrivi il tuo messaggio"
+              required
+            ></textarea>
+          </div>
+          <button type="submit">Invia</button>
+        </form>
+      </section>
+    </main>
   </body>
 </html>
