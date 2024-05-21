@@ -1,11 +1,14 @@
 /* 
 INDEX 
-00 - CSS RESET
+00 - CSS RESET & UTILITIES
 01 - HEADER
 02 - NAVBAR
+03 - HERO SECTION
+04 - MAIN 
+05 - FOOTER
 */
 
-/* 00 - CSS RESET */
+/* 00 - CSS RESET & UTILITIES */
 * {
   margin: 0;
   padding: 0;
@@ -16,8 +19,15 @@ body {
   font-family: "Courier New", Courier, monospace;
 }
 
+a {
+  text-decoration: none;
+}
+
 /* 01 - HEADER */
 header .discount {
+  position: fixed;
+  top: 0;
+  width: 100%;
   height: 20px;
   padding: 5px 0px;
   background-color: #000;
@@ -30,11 +40,17 @@ header .discount {
 nav {
   height: 60px;
   padding: 0px 10px;
+  margin-top: 20px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   background-color: teal;
   color: #fff;
+}
+
+nav .logo {
+  font-weight: bolder;
+  letter-spacing: 2px;
 }
 
 nav .menu ul {
@@ -45,6 +61,15 @@ nav .menu ul {
 nav .menu ul li {
   /* Tolgo i dots dai list-item */
   list-style: none;
+}
+
+nav .menu ul li a {
+  color: #cbcbcb;
+}
+
+nav .menu ul li a:hover {
+  font-weight: bolder;
+  color: #fff;
 }
 
 /* 03 - HERO SECTION */
@@ -84,8 +109,6 @@ nav .menu ul li {
   background-color: blue;
   color: yellow;
 }
-
-/*  */
 
 /* 04 - MAIN */
 main section {
@@ -173,4 +196,20 @@ main .fourth .img-container {
   background-color: teal;
   width: 100%;
   cursor: pointer;
+}
+
+.maps {
+  padding: 0;
+}
+
+.maps iframe {
+  width: 100%;
+}
+
+/* 05 - FOOTER */
+footer {
+  background-color: teal;
+  color: #fff;
+  text-align: center;
+  padding: 50px 0px;
 }
