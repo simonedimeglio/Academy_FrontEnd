@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  background-color: lightcoral;
+  border: 2px solid black;
+  width: 400px;
+  height: 400px;
+  margin-top: 100px;
+  position: relative;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: purple;
+  border: 2px solid white;
+  position: absolute;
+  bottom: 0;
+}
+
+/* 
+Se inserite position: absolute; in un elemento,
+questo si posizionerà sempre rispetto al body. 
+
+Per fare in modo tale che prenda come riferimento 
+un eventuale contenitore, quel contenitore dovrà
+esser in position: relative/absolute; come nell'esempio.
+*/
+
+.innerbox {
+  width: 50px;
+  height: 50px;
+  background-color: lime;
+  position: absolute;
+  bottom: 0;
+}
