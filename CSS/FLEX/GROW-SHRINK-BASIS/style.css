@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* .container {
+  border: 2px solid red;
+  height: 600px;
+  display: flex;
+} */
+
+/* 
+Flex Grow - definisce la capacità di un elemento 
+di crescere. Il valore che noi assegnamo a flex-grow
+rappresenta la proporzione di spazio che l'elemento 
+dovrà prendere rispetto agli altri.
+
+*/
+
+/* .item1 {
+  background-color: aquamarine;
+  flex-grow: 2;
+}
+
+.item2 {
+  background-color: crimson;
+  flex-grow: 1;
+} */
+
+/* 
+Flex Shrink - indica come un dato elemento 
+dovrebbe rimpicciolirsi rispetto agli altri 
+nel momento in cui lo spazio viene a mancare. 
+NB: se diamo 0 l'elemento NON si rimpicciolirà, 
+un valore più alto indica una maggiore capacità 
+di rimpicciolirsi.
+
+*/
+
+/* .container {
+  border: 2px solid red;
+  height: 600px;
+  display: flex;
+}
+
+.item1 {
+  background-color: yellow;
+  flex-shrink: 7;
+  width: 400px;
+}
+
+.item2 {
+  background-color: red;
+  flex-shrink: 0;
+  width: 400px;
+}
+
+.item3 {
+  background-color: green;
+  flex-shrink: 1;
+  width: 400px;
+} */
+
+.container {
+  display: flex;
+  width: 100vw;
+  height: 600px;
+  gap: 15px;
+}
+
+.colonna {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.col-1,
+.col-2 {
+  flex-grow: 1;
+}
+
+.col-3 {
+  flex-grow: 1.4;
+}
+
+.img-1,
+.img-2 {
+  background-color: yellow;
+}
+
+.col-1 .img-1,
+.col-2 .img-2,
+.col-3 .img-1 {
+  flex-grow: 1;
+}
+
+.col-1 .img-2,
+.col-2 .img-1 {
+  flex-grow: 1.3;
+}
