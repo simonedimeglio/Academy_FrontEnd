@@ -1,0 +1,245 @@
+/* CSS RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* UTILITIES */
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+h2 {
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+.container {
+  padding: 0px 20px;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 20px;
+}
+
+.btn {
+  padding: 10px 15px;
+  border-radius: 25px;
+  text-align: center;
+  display: inline-block;
+}
+
+.btn-black {
+  background-color: #000;
+  color: #fff;
+}
+
+.btn-white {
+  background-color: #fff;
+  color: #000;
+}
+
+.btn-white-border {
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #000;
+}
+
+.btn-yellow {
+  background-color: #ffc400;
+  color: #fff;
+  width: 500px;
+}
+
+/* HEADER - NAV */
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+}
+
+nav .menu,
+nav .logo,
+nav .cta {
+  display: flex;
+  align-items: center;
+  width: calc(100% / 3);
+}
+
+nav .menu ul {
+  display: flex;
+  gap: 15px;
+}
+
+nav .logo {
+  justify-content: center;
+}
+
+nav .logo img {
+  width: 100px;
+}
+
+nav .cta {
+  justify-content: flex-end;
+}
+
+/* HERO SECTION */
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 40px 0;
+}
+
+.hero h1 {
+  max-width: 750px;
+  margin: 20px 0px;
+  font-size: 60px;
+  font-weight: 500;
+}
+
+.hero .btn-black {
+  margin: 20px 0;
+}
+
+.card {
+  max-height: 400px;
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+}
+
+/* MAIN */
+.explore {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.explore-card {
+  display: flex;
+  flex-direction: column;
+  max-height: 300px;
+  margin-bottom: 40px;
+}
+
+.explore-card img {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+}
+
+.explore-card .description {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 12px;
+}
+
+.explore-card .description .author,
+.explore-card .description .likes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.explore-card .description .author svg,
+.explore-card .description .likes svg {
+  /* CERCHIETTO */
+  width: 15px;
+  fill: #6f6f6f;
+  margin-right: 5px;
+}
+
+.explore .btn-white-border {
+  margin-top: 60px;
+}
+
+.find-dev {
+  background-color: #ffc400;
+  margin-top: 80px;
+  padding: 80px 0px;
+}
+
+.find-dev .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.find-dev .container h2,
+.find-dev .container p {
+  max-width: 350px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.find-dev .container .cta-container {
+  margin-bottom: 20px;
+  width: 350px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* FOOTER */
+footer {
+  padding: 40px 0px;
+}
+footer .container .upper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer .container .upper a,
+footer .container .upper ul,
+footer .container .upper .heart {
+  width: calc(100% / 3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer .container .upper a img {
+  width: 70px;
+}
+
+footer .container .upper ul {
+  gap: 15px;
+}
+
+footer .container .upper ul li a {
+  width: 100%;
+}
+
+footer .container .upper .heart svg {
+  width: 30px;
+  fill: #ffc400;
+}
+
+footer .container .lower {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 13px;
+  color: #6f6f6f;
+}
