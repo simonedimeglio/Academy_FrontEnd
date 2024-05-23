@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.flex {
+  display: flex;
+}
+
+p-
+
+/* NAV */
+nav {
+  height: 70px;
+  background-color: teal;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+nav ul {
+  display: flex;
+  gap: 15px;
+}
+
+nav ul li {
+  list-style: none;
+}
+
+.hamburger {
+  display: none;
+}
+
+/* NAV QUERIES */
+/* DA UN MIN-WIDTH di X, FAI:  */
+/* FINO AD UN MAX-WIDTH di X, FAI: */
+@media screen and (min-width: 450px) and (max-width: 1000px) {
+  .hamburger {
+    display: block;
+  }
+  nav ul {
+    display: none;
+  }
+}
