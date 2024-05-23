@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* CONTENITORE ARANCIO */
+.container {
+  border: 5px solid orange;
+  min-height: 400px;
+  display: flex;
+  align-items: center;
+}
+
+/* CONTENITORI VERDI */
+.inner {
+  border: 5px solid green;
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 50px;
+}
+
+/* QUADRATINO VIOLA */
+.square-container .square {
+  width: 200px;
+  height: 200px;
+  background-color: rgb(120, 4, 208);
+}
+
+.second {
+  flex-direction: row-reverse;
+}
+
+.third {
+  flex-direction: column;
+}
+
+.third .inner {
+  width: 100%;
+}
