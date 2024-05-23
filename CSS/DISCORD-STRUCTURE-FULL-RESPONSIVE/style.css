@@ -6,7 +6,6 @@
 
 /* CONTENITORE ARANCIO */
 .container {
-  border: 5px solid orange;
   min-height: 400px;
   display: flex;
   align-items: center;
@@ -14,7 +13,6 @@
 
 /* CONTENITORI VERDI */
 .inner {
-  border: 5px solid green;
   width: 50%;
   height: 100%;
   display: flex;
@@ -34,6 +32,8 @@
 
 .second {
   flex-direction: row-reverse;
+  background-color: teal;
+  color: #fff;
 }
 
 .third {
@@ -42,4 +42,13 @@
 
 .third .inner {
   width: 100%;
+}
+
+@media only screen and (max-width: 450px) {
+  .container {
+    flex-direction: column;
+  }
+  .inner {
+    width: 100%;
+  }
 }
