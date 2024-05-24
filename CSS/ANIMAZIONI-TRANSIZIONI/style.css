@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.box {
+  width: 200px;
+  height: 200px;
+  background-color: blue;
+  animation: movimentoAndRotazione 5s infinite;
+}
+
+/* ANIMATION */
+@keyframes movimentoAndRotazione {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(100px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* TRANSITION */
+/* .box:hover {
+  background-color: red;
+  top: 50px;
+} */
+
+h1 {
+  font-size: 50px;
+  color: red;
+  animation: fade 5s infinite;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
