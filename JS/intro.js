@@ -1,3 +1,6 @@
+{
+}
+
 // VARIABILI -> LET & VAR
 
 // Dichiarare
