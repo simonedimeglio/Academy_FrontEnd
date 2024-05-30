@@ -193,3 +193,42 @@ let lista = [10, 34, 64, 79, 12, 4, 43];
 for (let i = 0; i < lista.length; i++) {
   console.log(lista[i]);
 }
+
+/**
+ *
+ *
+ * WHILE LOOP
+ *
+ * while (condizione) {
+ *    // Codice da eseguire fino a che "condizione" è true
+ * }
+ *
+ *
+ * Quali step segue?
+ *
+ * 1) Se presente un valore iniziale, bene dichiarlo esternamente
+ * 2) Verifica la condizione, se true esegue il blocco di codice per intero
+ *
+ */
+
+let i = 1;
+
+while (i <= 10) {
+  console.log(i);
+  i++;
+}
+
+// Sommare i numeri da 1 a 10 con un while
+
+let somma = 0;
+let starter = 1;
+
+while (starter <= 10) {
+  somma = somma + starter;
+  console.log(somma);
+  starter++;
+}
+
+console.log(somma);
+
+// Stampare i numeri PARI da 1 a 10 con un while
