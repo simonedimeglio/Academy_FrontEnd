@@ -151,3 +151,42 @@ if (numero % 3 === 0 && numero % 7 === 0) {
 } else {
   console.log("Il numero non è multiplo di 3 o di 7");
 }
+
+/**
+ *
+ * CICLO FOR
+ *
+ * for (inizializzazione; condizione; incremento/decremento) {
+ *  // Codice
+ * }
+ *
+ *
+ * INIZIALIZZAZIONE -> dobbiamo impostare una variabile di "contatore" all'inizio del ciclo
+ * CONDIZIONE -> fino a che è true, il ciclo continua. Il ciclo finisce quando condizione è false
+ * INCREMENTO/DECREMENTO -> modifica del "contatore"
+ *
+ *
+ * PASSAGGI CHE ESEGUE IL FOR???
+ * // 1) Inizializzazione: guardo il valore della i
+ * // 2) Controllo la condizione: se è vera, eseguo l'operazione all'interno del for
+ * // 3) Eseguo l'operazione all'interno del for
+ * // 4) Incremento o decremento
+ *
+ */
+
+// For con incremento
+for (let i = 1; i <= 10; i++) {
+  console.log(i);
+}
+
+// For con decremento
+for (let i = 10; i >= 1; i--) {
+  console.log(i);
+}
+
+// For su array
+let lista = [10, 34, 64, 79, 12, 4, 43];
+
+for (let i = 0; i < lista.length; i++) {
+  console.log(lista[i]);
+}
