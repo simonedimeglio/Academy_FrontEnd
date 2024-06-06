@@ -73,3 +73,38 @@ console.log(auto.km);
 auto.attaccaAdesivo("Forza Napoli");
 
 console.log(auto);
+
+/*
+METODI DEGLI OGGETTI 
+1) KEYS -> Object.keys()
+A che serve -> ad ottenere tutte le chiavi di un oggetto 
+Parametri -> l'oggetto da cui voglimo estrarre le chiavi 
+Return -> array di chiavi
+NB: nell'array risultante, le chiavi sono espresse come typeof string
+
+2) VALUES -> Object.values()
+A che serve -> ad ottenere tutti i valori di un oggetto 
+Parametri -> l'oggetto da cui voglimo estrarre i valori
+Return -> array di valori
+
+3) ENTRIES -> Object.entries()
+A che serve -> ad ottenere tutte le coppie chiave: valore, di un oggetto 
+Parametri -> l'oggetto da cui voglimo estrarre le proprietà
+Return -> array di array di proprietà
+NB: nell'array risultante, le chiavi sono espresse come typeof string
+*/
+
+let classe = {
+    alunni: 30, 
+    nome_classe: "3e"
+}
+
+
+let chiaviClasse = Object.keys(classe);
+console.log(chiaviClasse);
+
+let valoriClasse = Object.values(classe);
+console.log(valoriClasse);
+
+let proprietàClasse = Object.entries(classe);
+console.log(proprietàClasse);
