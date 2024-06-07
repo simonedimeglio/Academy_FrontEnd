@@ -1,0 +1,56 @@
+Esercizio JS - 6 Giugno 2024
+
+Gestione di un Ecommerce (con Registrazione e Accesso)
+
+Creare un’applicazione che simuli il menu interattivo di un negozio di elettronica. 
+
+L’utente può:
+- registrarsi
+- accedere
+- visualizzare i prodotti
+- aggiungere prodotti al carrello
+- rimuovere prodotti dal carrello
+- visualizzare il carrello
+- acquistare i prodotti nel carrello (utilizzando un saldo definito inizialmente, simulando una prepagata).
+
+Funzionalità di Base
+
+	A.	Visualizzare il Menu Principale (Mostrare le seguenti opzioni)
+	1.	Registrati
+	2.	Accedi
+	3.	Esci
+
+
+	B.	Registrazione Utente
+    Chiedere all’utente di inserire username, password e saldo iniziale. 
+    Aggiungere l’utente all’array degli utenti.
+
+
+	C.	Accesso Utente
+    Chiedere all’utente di inserire username e password. 
+    Se i dati sono corretti, permettere l’accesso alle funzionalità del negozio.
+	
+    D.	Visualizzare il Menu del Negozio (dopo l’accesso, mostrando le seguenti opzioni)
+	1.	Visualizza Prodotti
+	2.	Aggiungi al Carrello
+	3.	Rimuovi dal Carrello
+	4.	Visualizza Carrello
+	5.	Acquista Prodotti nel Carrello
+	6.	Esci
+
+Nel dettaglio:
+
+- Visualizzare Prodotti: Mostrare una lista di prodotti disponibili con il loro indice, nome e prezzo.
+- Aggiungere al Carrello: Chiedere all’utente di inserire l’indice del prodotto che vuole aggiungere al carrello e aggiungere l’oggetto corrispondente all’array del carrello.
+- Rimuovere dal Carrello: Chiedere all’utente di inserire l’indice del prodotto che vuole rimuovere dal carrello e rimuovere l’oggetto corrispondente dall’array del carrello.
+- Visualizzare il Carrello: Mostrare una lista dei prodotti attualmente nel carrello con il loro nome e prezzo.
+- Visualizzare il Saldo: Mostrare il saldo attuale dell’utente.
+- Acquistare Prodotti nel Carrello: Calcolare il totale del carrello e verificare se il saldo è sufficiente per l’acquisto. Se sì, sottrarre il totale dal saldo e svuotare il carrello, altrimenti mostrare un messaggio di saldo insufficiente.
+- Uscire: Terminare l’applicazione.
+
+
+
+BONUS: 
+- Funzionalità di ricaricare il saldo 
+- Funzionalità di scorte a magazzino per ogni prodotto (sono limitati, se disponibili puoi comprarli, altrimenti no)
+- Accesso come ADMIN per permettere la creazione di protti aggiuntivi, l'aggiunta di scorte a magazzino o l'eliminazione di prodotti dall'ecommerce

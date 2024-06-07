@@ -108,3 +108,17 @@ console.log(valoriClasse);
 
 let proprietàClasse = Object.entries(classe);
 console.log(proprietàClasse);
+
+
+
+function controlloSeUguali(primoArray, secondoArray) {
+    if (primoArray.length !== secondoArray.length) {
+        return false;
+    }
+    for (let i = 0; i < primoArray.length; i++) {
+        if (primoArray[i] !== secondoArray[i]) {
+            return false;
+        }
+    }
+    return true;
+}
