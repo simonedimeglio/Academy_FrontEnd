@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Ripasso conclusivo</title>
+</head>
+<body class="flex flex-col justify-center items-center min-h-screen border-2">
+
+    <div class="mx-auto w-[600px] rounded-3xl shadow-2xl text-center px-4 py-12">
+
+        <h1 class="font-mono uppercase font-semibold text-blue-500">Effettua l'accesso</h1>
+        <!-- FORM -->
+        <form id="formDiLogin" class="mt-4">
+            <div class="my-2 border rounded-lg w-[200px] mx-auto p-2">
+                <label for="username"></label>
+                <input class="text-center" type="text" id="username" name="username" placeholder="Inserisci username" required>
+            </div>
+            <div class="my-2 border rounded-lg w-[200px] mx-auto p-2">
+                <label for="password"></label>
+                <input class="text-center" type="password" id="password" name="password" placeholder="Inserisci password" required>
+            </div>
+            
+            <button class="bg-blue-700 hover:bg-blue-500 text-white w-[200px] rounded-lg p-2 mt-2" type="submit">Accedi</button>
+        </form>
+
+        
+    </div>
+
+    <p id="messaggioErrore" class="mt-12 text-red-500"></p>
+    <!-- <div class="mt-12 bg-red-500 text-white w-[600px] p-4 rounded-xl text-center hidden"></p> -->
+    <script src="script.js"></script>
+</body>
+</html>
