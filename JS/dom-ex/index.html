@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <input id="inputTestuale" type="text" placeholder="Scrivi qualcosa">
+    <button id="btn">STAMPA LA SCRITTA</button>
+
+    <input type="checkbox" name="prezzo" value="30" id="check">
+    <label for="prezzo">Accessorio 1</label>
+
+
+
+    <div id="contenitore"></div>
+    
+    <script>
+        // PUNTATORI
+        const inputTestuale = document.getElementById("inputTestuale");
+        const btn = document.getElementById("btn");
+        const contenitore = document.getElementById("contenitore");
+        const check = document.getElementById("check");
+
+
+        let prezzoIniziale = 1000;
+        let prezzoFinale = 0;
+
+        // PREZZO FINALE = se ho selezionato la checkbox è prezzoIniziale + 30, altrimenti è prezzoIniziale
+        console.log(check.checked)
+        console.log(typeof (check.value));
+
+        let valoreCheck = parseInt(check.value);
+
+
+
+
+        btn.addEventListener('click', function(){
+            console.log("Valore dell'input:", inputTestuale.value)
+
+            if (check.checked) {
+                prezzoFinale = prezzoIniziale + valoreCheck;
+            } else {
+                prezzoFinale = prezzoIniziale;
+            }
+
+            contenitore.innerText = `${inputTestuale.value} ${prezzoFinale}`;
+        })
+
+
+
+
+    </script>
+</body>
+</html>
