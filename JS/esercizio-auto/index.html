@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Ricerca automobili</title>
+  </head>
+  <body class="bg-slate-900 text-white h-screen font-mono">
+  
+    <!-- HEADER - RICERCA -->
+    <header class="border-b-2 border-slate-500 first-letter:flex flex-col items-center justify-center text-center p-12">
+      <!-- TITOLO -->
+      <h1 class="mb-4 text-2xl uppercase italic">Ricerca automobili</h1>
+      <!-- CONTAINER RICERCA -->
+      <div>
+        <div class="flex flex-col mb-2">
+          <label for="brand">Brand:</label>
+          <input type="text" id="brand" class="text-center px-4 py-2 mx-auto w-[300px] text-slate-700 font-semibold"/>
+        </div>
+        <div class="flex flex-col mb-4">
+          <label for="modello">Modello:</label>
+          <input type="text" id="modello" class="text-center px-4 py-2 mx-auto w-[300px] text-slate-700 font-semibold"/>
+        </div>
+
+        <button id="ricerca" class="bg-green-300 rounded-sm p-2 text-black font-bold uppercase mx-auto mt-4 w-[300px]">Cerca auto</button>
+      </div>
+    </header>
+
+    <!-- MAIN - RISULTATI -->
+     <main class="text-center p-4">
+        <h2 class="text-xl uppercase italic">Risultati</h2>
+        <ul id="risultati" class="mt-4">
+        </ul>
+     </main>
+    <script src="script.js"></script>
+  </body>
+</html>
