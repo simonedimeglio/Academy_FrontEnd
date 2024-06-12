@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+</head>
+<body>
+
+    <header class="h-[70px] flex justify-center items-center bg-blue-400/80 text-blue-100 border-b-2 border-blue-900/30 shadow-md font-bold uppercase">
+        <h1 class="text-4xl">To Do List</h1>
+    </header>
+
+    <main class="max-w-[400px] mt-[100px] mx-auto">
+        <!-- Aggiungi task -->
+        <div class="flex flex-col justify-center items-center">
+            <input type="text" id="nuovaTask" placeholder="Inserisci una task" class="border text-center px-4 py-2 w-full">
+            <button id="aggiungiBtn" class="bg-blue-400/80 text-blue-100 w-full mt-4 px-4 py-2 hover:bg-blue-400 hover:text-white">Aggiungi</button>        
+        </div>
+
+        <!-- Lista task -->
+        <div>
+            <button id="rimuoviBtn" class="bg-emerald-400/80 text-blue-100 w-full mt-2 px-4 py-2 hover:bg-emerald-400 hover:text-white">Rimuovi task completate</button>
+            <ul id="toDoList" class="pt-4"></ul>
+        </div>
+    </main>
+
+ 
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
