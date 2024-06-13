@@ -12,8 +12,8 @@ function generaLi(utente) {
     return li; 
 }
 
+// PRIMO MODO
 function fetchUtenti() {
-    // Fetch! 
     fetch(url)
         .then(risposta => {
             if (!risposta.ok) {
@@ -30,6 +30,27 @@ function fetchUtenti() {
         .catch(errore => {
             console.error("ERRORE", errore);
         })
+}
+
+
+// SECONDO MODO 
+async function fetchUtenti(){
+    try {
+        const response = await fetch(url)
+        if (!response.ok) {
+            throw new Error('Errore'); 
+        }
+        const utenti = await response.json();
+
+        utenti.forEach(utente => {
+            const stampa = generaLi(utente);
+            listaUtenti.appendChild(stampa);
+        })
+    } catch (errore) {
+        console.error(errore);
+    }   
+
+
 }
 
 fetchUtenti();
