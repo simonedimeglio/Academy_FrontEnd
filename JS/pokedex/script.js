@@ -9,21 +9,21 @@ const container = document.getElementById("pokemonContainer");
  */
 
 const numeroCasuale = Math.floor(Math.random() * 1025) +1 ;
-// fetch(`https://pokeapi.co/api/v2/pokemon/${numeroCasuale}`)
-//     .then(response => response.json())
-//     .then(pokemon => {
+fetch(`https://pokeapi.co/api/v2/pokemon/${numeroCasuale}`)
+    .then(response => response.json())
+    .then(pokemon => {
 
-//         const h2 = document.createElement("h2");
-//         h2.innerText = `${pokemon.name}`;
+        const h2 = document.createElement("h2");
+        h2.innerText = `${pokemon.name}`;
 
-//         const img = document.createElement("img"); 
-//         img.src = `${pokemon.sprites.front_default}`;
+        const img = document.createElement("img"); 
+        img.src = `${pokemon.sprites.front_default}`;
 
-//         container.append(h2, img);
-//     })
-//     .catch(error => {
-//         console.error(error)
-//     }); 
+        container.append(h2, img);
+    })
+    .catch(error => {
+        console.error(error)
+    }); 
         
 
 /**
@@ -56,3 +56,12 @@ async function ottieniPokemon() {
 }
 
 ottieniPokemon();
+
+
+
+// ESERCIZIO 1 -> aggiungo un bottone, ad ogni click su quel bottone 
+// stampo un pokemon casuale
+
+
+// ESERCIZIO 2 -> aggiungo un input testuale, al click sul pulsante 
+// cerco il pokemon che abbia id o nome = input testuale
