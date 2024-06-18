@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>CRUD</title>
+  </head>
+  <body>
+    <div class="mt-[50px]">
+      <h1 class="text-2xl text-center uppercase font-semibold font-mono">Gestionale Utenti</h1>
+
+      <!-- Form per creazione di un utente -->
+      <form
+        id="formUtente"
+        class="flex flex-col w-[300px] md:w-[500px] mx-auto p-12 shadow-md"
+      >
+        <input
+          type="text"
+          id="nome"
+          placeholder="Nome"
+          class="border-2 text-center p-2 mb-4"
+          required
+        />
+        <input
+          type="email"
+          id="email"
+          placeholder="Email"
+          class="border-2 text-center p-2 mb-4"
+          required
+        />
+        <button type="submit" class="bg-black p-2 text-white">
+          Aggiungi utente
+        </button>
+      </form>
+
+      <!-- Lista per la stampa degli utenti -->
+      <ul id="listaUtenti" class="text-center mt-[40px]"></ul>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
